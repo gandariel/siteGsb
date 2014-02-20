@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <!--[if lt IE 9]>
+			<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+        <link rel="stylesheet" href="style.css" />
+        <title> Bienvenue sur le site GSB </title>
+    </head>
+    
+    <body>
+        <div id="bloc_page">
+                <header>
+                    <figure>
+			<figcaption>
+				<img src="images/logo.png" alt="Logo du site GSB"/>
+			</figcaption>
+                    </figure>
+                    
+                    <nav>
+                        <ul>
+                            <li><a href="index.html"> Acceuil </a></li>
+                            <li><a href="contact.html"> Contact </a></li>
+                            <li><a href="connexion.html"> Connexion </a></li>
+                        </ul>
+                    </nav>
+                </header>
+                
+        
+                <form method="post" action="traitement.php">
+                    
+                    <fieldset id="formulaire">
+                        <legend> Formulaire de contact</legend>
+                            <label for="nom"  > <strong> Nom : </strong> </label>
+                            <input type="text" name="nom" id="nom" required autofocus maxlength="50" placeholder="Ex : Dupont"/> <br><br>
+
+                            <label for="prenom"><strong> Prénom : </strong></label>
+                            <input type="text" name="prenom" id="prenom" required maxlength="50" placeholder="Ex : Jean-François"/> <br><br>
+
+
+                            <label for="mail"><strong> e-Mail: </strong></label>
+                            <input type="email" name="mail" id="mail" required maxlength="50" placeholder="Ex : j.f-dupont@live.fr"/> <br><br>
+
+                            <label for="commentaires"><strong> Commentaires : </strong></label>
+                            <textarea name="commentaires" id="commentaires" required rows="15" cols="34"></textarea>
+                            
+                            <input id="bouton" class="click" type="submit" value="Envoyer"/>
+                           
+                    </fieldset>
+                </form>
+            
+            <footer> 
+                    <div id="social">
+                        
+                        <figure><h5> Page Facebook</h5>
+                            <figcaption>
+                                <img src="images/facebook.png" />
+                            </figcaption>
+                        </figure>
+                    </div>
+                    
+                    <div id="partenaires">
+                        <ul><h5> Partenaires </h5>
+                            <li> Mairie de Paris </li>
+                            <li> Société Vidal </li>
+                        </ul>
+                    </div>
+                    
+                    <div id="copy">
+                        <em>Copyright Mustapha & Mohamed</em>
+                    </div>
+                </footer>
+        </div>
+    </body>
+</html>
